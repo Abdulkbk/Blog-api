@@ -19,6 +19,7 @@ def create_post(request):
   if serializer.is_valid():
     serializer.save()
     return Response(serializer.data, status=status.HTTP_201_CREATED)
+  return Response(serializer.errors)
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def post_detail(request, id):
