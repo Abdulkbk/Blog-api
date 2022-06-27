@@ -7,7 +7,7 @@ User = settings.AUTH_USER_MODEL
 # Create your models here.
 class Post(models.Model):
   author = models.ForeignKey(User, on_delete=models.CASCADE, 
-          related_name='blog_post', null=True)
+          related_name='blog_post', null=False)
   title = models.CharField(max_length=255)
 #   slug = models.SlugField(max_length=255, unique_for_date='created_at', null=True)
   content = models.TextField()
