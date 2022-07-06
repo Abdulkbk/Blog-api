@@ -3,8 +3,8 @@
 name: CI-CD pipeline to AWS
 env:
   EB_S3_BUCKET_NAME: 'tmp-github-actions-push'
-  EB_APPLICATION_NAME: 'Sample Application'
-  EB_ENVIRONMENT_NAME: 'Blogapi-env'
+  EB_APPLICATION_NAME: 'Blog-API'
+  EB_ENVIRONMENT_NAME: 'Blogapi-env-1'
   DEPLOY_PACKAGE_NAME: 'django-app-${{ github.sha }}.zip'
   AWS_REGION_NAME: 'eu-west-1'
 
