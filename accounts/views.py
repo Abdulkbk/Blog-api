@@ -1,4 +1,3 @@
-from msilib.schema import Class, CustomAction
 from django.views import View
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
