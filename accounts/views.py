@@ -10,7 +10,7 @@ from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
 from accounts.models import CustomUser
 from .serializers import LoginSerializer, RegisterSerializer, UserSerializer
 
-
+"""Class-based view"""
 class LoginViewSet(ModelViewSet, TokenObtainPairView):
   serializer_class = LoginSerializer
   permission_classes = (AllowAny,)
